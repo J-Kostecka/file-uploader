@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+#root {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(17,17,207,1) 0%, rgba(3,157,189,1) 100%);
+    min-height: 100%;
+    font-family: 'Montserrat';
+}
+#root > div {
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+    margin: 25px 0px;
+    text-align: center;
+}
+#successbox {
+    background-color: lightgreen;
+    width: 40%;
+    padding: 10px;
+    margin-left: 30%;
+}
+#errorbox {
+    background-color: lightcoral;
+    width: 40%;
+    padding: 10px;
+    margin-left: 30%;
+}
+.form-wrapper {
+    width: 30%;
+}
+.form-wrapper input[type=submit] {
+    padding: 20px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.data-wrapper {
+    width: 50%;
+}
+.data-wrapper table {
+    text-align: left;
+    width: 100%;
+    border-spacing: 0;
+}
+.data-wrapper table thead {
+    border-bottom: solid 2px black;
+}
+.data-wrapper table tbody tr {
+    cursor: pointer;
+}
+.data-wrapper table tbody tr:hover {
+    background-color: lightblue;
+}
+.clicked-row {
+    background-color: dodgerblue !important;
+    color: white;
+}
